@@ -1,0 +1,3 @@
+C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab01/cmake-build-debug/CMakeFiles/lab1.dir
+C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab01/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab01/cmake-build-debug/CMakeFiles/rebuild_cache.dir
