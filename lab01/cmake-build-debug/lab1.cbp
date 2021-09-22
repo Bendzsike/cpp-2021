@@ -80,10 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab01/main.cpp">
+		<Unit filename="C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab01/functions.cpp">
 			<Option target="lab1"/>
 		</Unit>
-		<Unit filename="C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab02/main.cpp">
+		<Unit filename="C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab01/functions.h">
+			<Option target="lab1"/>
+		</Unit>
+		<Unit filename="C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab01/main.cpp">
 			<Option target="lab1"/>
 		</Unit>
 		<Unit filename="C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab01/CMakeLists.txt">

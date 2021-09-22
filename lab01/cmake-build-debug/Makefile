@@ -142,32 +142,32 @@ lab1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab1.dir\build.make CMakeFiles/lab1.dir/build
 .PHONY : lab1/fast
 
-C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.obj: C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj
+functions.obj: functions.cpp.obj
 
-.PHONY : C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.obj
+.PHONY : functions.obj
 
 # target to build an object file
-C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab1.dir\build.make CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj
-.PHONY : C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj
+functions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab1.dir\build.make CMakeFiles/lab1.dir/functions.cpp.obj
+.PHONY : functions.cpp.obj
 
-C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.i: C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.i
+functions.i: functions.cpp.i
 
-.PHONY : C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.i
+.PHONY : functions.i
 
 # target to preprocess a source file
-C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab1.dir\build.make CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.i
-.PHONY : C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.i
+functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab1.dir\build.make CMakeFiles/lab1.dir/functions.cpp.i
+.PHONY : functions.cpp.i
 
-C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.s: C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.s
+functions.s: functions.cpp.s
 
-.PHONY : C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.s
+.PHONY : functions.s
 
 # target to generate assembly for a file
-C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab1.dir\build.make CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.s
-.PHONY : C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.s
+functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab1.dir\build.make CMakeFiles/lab1.dir/functions.cpp.s
+.PHONY : functions.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -205,9 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... lab1
-	@echo ... C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.obj
-	@echo ... C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.i
-	@echo ... C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.s
+	@echo ... functions.obj
+	@echo ... functions.i
+	@echo ... functions.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -89,29 +89,29 @@ CMakeFiles/lab1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab1.dir/main.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab01\main.cpp" -o CMakeFiles\lab1.dir\main.cpp.s
 
-CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj: CMakeFiles/lab1.dir/flags.make
-CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj: C:/Users/Benjamin/Desktop/Egyetem/II.\ Ev/I.\ Felev/CPP/Labor/lab02/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab01\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\lab1.dir\C_\Users\Benjamin\Desktop\Egyetem\II._Ev\I._Felev\CPP\Labor\lab02\main.cpp.obj -c "C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab02\main.cpp"
+CMakeFiles/lab1.dir/functions.cpp.obj: CMakeFiles/lab1.dir/flags.make
+CMakeFiles/lab1.dir/functions.cpp.obj: ../functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab01\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab1.dir/functions.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\lab1.dir\functions.cpp.obj -c "C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab01\functions.cpp"
 
-CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab02\main.cpp" > CMakeFiles\lab1.dir\C_\Users\Benjamin\Desktop\Egyetem\II._Ev\I._Felev\CPP\Labor\lab02\main.cpp.i
+CMakeFiles/lab1.dir/functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab1.dir/functions.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab01\functions.cpp" > CMakeFiles\lab1.dir\functions.cpp.i
 
-CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab02\main.cpp" -o CMakeFiles\lab1.dir\C_\Users\Benjamin\Desktop\Egyetem\II._Ev\I._Felev\CPP\Labor\lab02\main.cpp.s
+CMakeFiles/lab1.dir/functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab1.dir/functions.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Benjamin\Desktop\Egyetem\II. Ev\I. Felev\CPP\Labor\lab01\functions.cpp" -o CMakeFiles\lab1.dir\functions.cpp.s
 
 # Object files for target lab1
 lab1_OBJECTS = \
 "CMakeFiles/lab1.dir/main.cpp.obj" \
-"CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj"
+"CMakeFiles/lab1.dir/functions.cpp.obj"
 
 # External object files for target lab1
 lab1_EXTERNAL_OBJECTS =
 
 lab1.exe: CMakeFiles/lab1.dir/main.cpp.obj
-lab1.exe: CMakeFiles/lab1.dir/C_/Users/Benjamin/Desktop/Egyetem/II._Ev/I._Felev/CPP/Labor/lab02/main.cpp.obj
+lab1.exe: CMakeFiles/lab1.dir/functions.cpp.obj
 lab1.exe: CMakeFiles/lab1.dir/build.make
 lab1.exe: CMakeFiles/lab1.dir/linklibs.rsp
 lab1.exe: CMakeFiles/lab1.dir/objects1.rsp
