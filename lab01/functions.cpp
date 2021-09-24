@@ -133,6 +133,7 @@ void nMostCommonWords(const string& fileName, int n) {
         }
         input >> word;
     }
+    input.close();
     bible.erase("");
 
     vector<pair<string, int>> backup;
