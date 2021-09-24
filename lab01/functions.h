@@ -6,6 +6,11 @@
 #define CPP_2021_FUNCTIONS_H
 
 #include <iostream>
+#include <map>
+#include <fstream>
+#include <string>
+#include <algorithm>
+#include <vector>
 #include <cmath>
 #include <utility>
 #include <limits>
@@ -26,5 +31,11 @@ pair<double, double> max2(double[], int);
 int countWords(const string&);
 
 string code(const string&);
+
+string capitalizeWords(const string&);
+
+///EXTRA
+
+void nMostCommonWords(const string&, int);
 
 #endif //CPP_2021_FUNCTIONS_H

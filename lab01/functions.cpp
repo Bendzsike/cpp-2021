@@ -79,14 +79,73 @@ int countWords(const string& str) {
 
 string code(const string& str) {
     string result;
-    for(int i = 0; i < str.length(); ++i) {
-        if((str[i] >= 'a' && str[i] < 'z') || (str[i] >= 'A' && str[i] < 'Z')) {
-            result[i] = str[i] + 1;
-        } else if(str[i] == 'z') {
-            result[i] = 'a';
-        } else if(str[i] == 'Z') {
-            result[i] = 'A';
+    for(char ch : str) {
+        if((ch >= 'a' && ch < 'z') || (ch >= 'A' && ch < 'Z')) {
+            result += (char)(ch + 1);
+        } else if(ch == 'z' || ch == 'Z') {
+            result += (char)(ch - 25);
+        } else {
+            result += ch;
         }
     }
     return result;
+}
+
+string capitalizeWords(const string& text) {
+    string result;
+    result += (char)toupper(text[0]);
+    for(int i = 1; i < text.length(); ++i) {
+        if (text[i - 1] == ' ') {
+            result += (char) toupper(text[i]);
+        } else {
+            result += (char) tolower(text[i]);
+        }
+    }
+    return result;
+}
+
+///EXTRA
+
+void nMostCommonWords(const string& fileName, int n) {
+    ifstream input(fileName);
+    if(!input) {
+        cout << "Couldn't open file!" << endl;
+        return;
+    }
+
+    map<string, int> bible;
+    string word;
+    input >> word;
+    while(!input.eof()) {
+        for (int i = 0; i < word.size(); i++)
+        {
+            if (ispunct(word[i]))
+            {
+                word.erase(i--, 1);
+            }
+            word[i] = (char)tolower(word[i]);
+        }
+        auto it = bible.find(word);
+        if(it == bible.end()) {
+            bible[word] = 1;
+        } else {
+            bible[word] = bible[word] + 1;
+        }
+        input >> word;
+    }
+    bible.erase("");
+
+    vector<pair<string, int>> backup;
+    for(int i = 0; i < 10; ++i) {
+        auto best = max_element(bible.begin(), bible.end(),
+                                [](const pair<string, int> &a, const pair<string, int> &b) -> bool {
+                                    return a.second < b.second;
+                                });
+        cout << best->first << " - " << best->second << endl;
+        backup.emplace_back(make_pair(best->first, best->second));
+        bible[best->first] = 0;
+    }
+    for(int i = 0; i < 10; ++i) {
+        bible[backup[i].first] = backup[i].second;
+    }
 }

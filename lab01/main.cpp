@@ -1,4 +1,5 @@
 #include <iostream>
+#include <map>
 #include <utility>
 #include <sstream>
 #include <cstring>
@@ -41,8 +42,17 @@ int main(int argc, char * argv[]) {
 //    }
 //    cout << "Numeric sum from command line: " << sum << endl;
 
-    string str("Hello there General KenobiZ");
+//    string str("Hello there General Kenobi");
 //    cout << "String \"" << str << "\" has " << countWords(str) << " words." << endl;
-    cout << "Coded message: " << code(str) << endl;
+//    string str("AbCdEfGhIjKzZ1234.,");
+//    cout << "Coded message: " << code(str) << endl;
+
+//    string line;
+//    cout << "Enter your text:" << endl;
+//    while(getline(cin, line) && !line.empty()) {
+//        cout << capitalizeWords(line) << endl;
+//    }
+
+    nMostCommonWords(argv[1], atoi(argv[2]));
     return 0;
 }
