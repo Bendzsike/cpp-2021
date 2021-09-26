@@ -136,7 +136,6 @@ void nMostCommonWords(const string& fileName, int n) {
     input.close();
     bible.erase("");
 
-    vector<pair<string, int>> backup;
     for(int i = 0; i < n; ++i) {
         pair<string, int> best("", 0);
         for(auto it = bible.begin(); it != bible.end(); ++it) {
@@ -146,10 +145,6 @@ void nMostCommonWords(const string& fileName, int n) {
             }
         }
         cout << best.first << " - " << best.second << endl;
-        backup.emplace_back(make_pair(best.first, best.second));
         bible[best.first] = 0;
-    }
-    for(int i = 0; i < n; ++i) {
-        bible[backup[i].first] = backup[i].second;
     }
 }
