@@ -44,7 +44,7 @@ int main() {
     cout << endl;
 
     cout << "11. assignment:" << endl;
-//    sortPoints(points, N);
+    sortPoints(points, N);
 
     cout << "12. assignment:" << endl;
     Point* top = farthestPointsFromOrigin(points, N);
