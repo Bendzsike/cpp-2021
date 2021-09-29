@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include <cmath>
-
-#define EPS 0.000001
+#include <iterator>
+#include <set>
 
 class Point {
 private:

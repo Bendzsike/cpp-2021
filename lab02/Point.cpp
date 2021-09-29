@@ -27,26 +27,21 @@ double distance(const Point& a, const Point& b) {
 }
 
 bool isSquare(const Point& a, const Point& b, const Point& c, const Point& d) {
-    /*A - B
-     *A - C
-     *
-     *A - B
-     *A - D
-     *
-     *A - C
-     *A - D*/
-    double distanceAB = distance(a, b);
-    double distanceAC = distance(a, c);
-    double distanceAD = distance(a, d);
+    //I calculate every distance between each point, and put them in a set.
+    //Every value in a set has to be unique.
+    std::set<double> s;
+    s.insert(distance(a, b));
+    s.insert(distance(a, c));
+    s.insert(distance(a, d));
+    s.insert(distance(b, c));
+    s.insert(distance(b, d));
+    s.insert(distance(c, d));
 
-    if(true) {
+
+    //There are only 2 types of distances in a square, so if set size is 2, then it's a square.
+    if(s.size() == 2) {
         return true;
     }
-    if(distanceAB == distanceAD && (pow((double)distanceAB, 2) + pow((double)distanceAD, 2) == pow((double)distanceAC, 2))) {
-        return true;
-    }
-    if(distanceAC == distanceAD && (pow((double)distanceAC, 2) + pow((double)distanceAD, 2) == pow((double)distanceAB, 2))) {
-        return true;
-    }
+    //Else, it's not.
     return false;
 }
