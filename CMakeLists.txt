@@ -4,7 +4,7 @@ set(CMAKE_CXX_STANDARD 17)
 project(cpp-2021)
 
 add_subdirectory(lab01)
-#add_subdirectory(lab02)
+add_subdirectory(lab02)
 #add_subdirectory(lab03)
 #add_subdirectory(lab04)
 #add_subdirectory(lab05)
