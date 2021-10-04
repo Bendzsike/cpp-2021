@@ -5,6 +5,7 @@
 #include <iostream>
 #include <iterator>
 #include <fstream>
+#include <sstream>
 #include <random>
 #include <cmath>
 #include <ctime>
@@ -33,6 +34,5 @@ pair<Point, Point> farthestPoints(Point* points, int numPoints);
 void sortPoints(Point* points, int numPoints);
 Point* farthestPointsFromOrigin(Point* points, int numPoints);
 void deletePoints(Point* points);
-pair<Point, Point> closest(Point P[], int n);
 
 #endif //LAB2_POINT_H

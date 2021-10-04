@@ -53,17 +53,20 @@ void testIsSquare(const char *fileName) {
         exit(1);
     }
 
-    while (true) {
-        int x1, y1, x2, y2, x3, y3, x4, y4;
-        input >> x1 >> y1 >> x2 >> y2 >> x3 >> y3 >> x4 >> y4;
-        if (input.eof()) {
-            break;
-        }
-        Point a(x1, y1);
-        Point b(x2, y2);
-        Point c(x3, y3);
-        Point d(x4, y4);
-        cout << " a";
+    string str;
+    int i = 0;
+    while (getline(input, str)) {
+        istringstream ss(str);
+        int x, y;
+        ss >> x >> y;
+        Point a(x, y);
+        ss >> x >> y;
+        Point b(x, y);
+        ss >> x >> y;
+        Point c(x, y);
+        ss >> x >> y;
+        Point d(x, y);
+        cout << ++i << ". a";
         a.print();
         cout << " b";
         b.print();
@@ -72,6 +75,9 @@ void testIsSquare(const char *fileName) {
         cout << " d";
         d.print();
         cout << " " << (isSquare(a, b, c, d) ? "Yes" : "No") << endl;
+        if (input.eof()) {
+            break;
+        }
     }
 }
 
@@ -139,7 +145,10 @@ bool partialSortCompare(Point a, Point b) {
 
 Point* farthestPointsFromOrigin(Point* points, int numPoints) {
     Point* top = new Point[10];
-    for(int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; ++i) {
+        top[i] = Point(0, 0);
+    }
+    for(int i = 0; i < numPoints && i < 10; ++i) {
         int maxIndex = i;
         double maxValue = distance(points[i], Point(0, 0));
         for (int j = i + 1; j < numPoints; ++j) {
