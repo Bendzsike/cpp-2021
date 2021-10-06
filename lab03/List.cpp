@@ -47,9 +47,38 @@ int List::removeFirst() {
     return node->value;
 }
 
-//void List::remove(int d, DeleteFlag df = DeleteFlag::EQUAL) {
-//
-//}
+void List::remove(int d, DeleteFlag df) {
+    auto *node = first;
+    switch(df) {
+        case DeleteFlag::LESS:
+            while(node != nullptr) {
+                if(node->next->value < d) {
+                    node->next = node->next->next;
+                    return;
+                }
+                node = node->next;
+            }
+            break;
+        case DeleteFlag::EQUAL:
+            while(node != nullptr) {
+                if(node->next->value == d) {
+                    node->next = node->next->next;
+                    return;
+                }
+                node = node->next;
+            }
+            break;
+        case DeleteFlag::GREATER:
+            while(node != nullptr) {
+                if(node->next->value > d) {
+                    node->next = node->next->next;
+                    return;
+                }
+                node = node->next;
+            }
+            break;
+    }
+}
 void List::print() const {
     auto *node = first;
     cout << "[";

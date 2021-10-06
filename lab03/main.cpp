@@ -5,28 +5,44 @@
 using namespace std;
 
 int main() {
-//    try {
-//        List list;
-//        for (int i = 0; i < 10; ++i) {
-//            list.insertFirst(i);
-//        }
-//        list.print();
-//    cout << list.exists(1) << endl;
-//    cout << list.size() << endl;
-//        list.removeFirst();
-//        list.print();
-//    } catch(const length_error &e) {
-//        cerr << e.what() << endl;
-//    }
+    try {
+        List list;
+        cout << "We insert elements [0, 9] in the list." << endl;
+        for (int i = 0; i < 10; ++i) {
+            list.insertFirst(i);
+        }
+        cout << "We print the list:" << endl;
+        list.print();
+    cout << "Does number '1' exist in the list?" << (list.exists(1) ? "Yes" : "No") << endl;
+    cout << "List size: " << list.size() << endl;
+        list.removeFirst();
+        cout << "We removed the first element." << endl;
+        cout << "We print the list:" << endl;
+        list.print();
+        cout << "Let's try removing element '2'." << endl;
+        list.remove(2);
+        while(!list.empty()) {
+            list.removeFirst();
+        }
+        cout << "We try to remove from an empty list, resulting in exception." << endl;
+        list.removeFirst();
+        cout << endl << endl;
+    } catch(const length_error &e) {
+        cerr << e.what() << endl;
+    }
 
     try {
         Stack stack;
+        cout << "We insert elements [0, 9] in the stack." << endl;
         for(int i = 0; i < 10; ++i) {
             stack.push(i);
         }
+        cout << "We pop and print the elements of the stack." << endl;
         while(!stack.isEmpty()) {
-            cout << stack.pop() << endl;
+            cout << stack.pop() << ", ";
         }
+        cout << endl;
+        cout << "We try to pop from an empty stack, resulting in exception." << endl;
         stack.pop();
     } catch(const length_error &e) {
         cerr << e.what() << endl;
