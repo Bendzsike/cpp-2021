@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab02/Point.cpp
+Point.h
+C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab02/Point.h
+
 C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab02/Point.h
 algorithm
 -
@@ -15,6 +19,8 @@ iterator
 -
 fstream
 -
+sstream
+-
 random
 -
 cmath
@@ -23,10 +29,4 @@ ctime
 -
 set
 -
-
-C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab02/main.cpp
-iostream
--
-Point.h
-C:/Users/Benjamin/Desktop/Egyetem/II. Ev/I. Felev/CPP/Labor/lab02/Point.h
 
