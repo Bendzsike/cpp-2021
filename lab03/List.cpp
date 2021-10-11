@@ -51,27 +51,45 @@ void List::remove(int d, DeleteFlag df) {
     auto *node = first;
     switch(df) {
         case DeleteFlag::LESS:
+            if(node->value < d) {
+                removeFirst();
+                --nodeCounter;
+                return;
+            }
             while(node != nullptr) {
                 if(node->next->value < d) {
                     node->next = node->next->next;
+                    --nodeCounter;
                     return;
                 }
                 node = node->next;
             }
             break;
         case DeleteFlag::EQUAL:
+            if(node->value == d) {
+                removeFirst();
+                --nodeCounter;
+                return;
+            }
             while(node != nullptr) {
                 if(node->next->value == d) {
                     node->next = node->next->next;
+                    --nodeCounter;
                     return;
                 }
                 node = node->next;
             }
             break;
         case DeleteFlag::GREATER:
+            if(node->value > d) {
+                removeFirst();
+                --nodeCounter;
+                return;
+            }
             while(node != nullptr) {
                 if(node->next->value > d) {
                     node->next = node->next->next;
+                    --nodeCounter;
                     return;
                 }
                 node = node->next;

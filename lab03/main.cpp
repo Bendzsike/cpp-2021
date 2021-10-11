@@ -13,14 +13,18 @@ int main() {
         }
         cout << "We print the list:" << endl;
         list.print();
-    cout << "Does number '1' exist in the list?" << (list.exists(1) ? "Yes" : "No") << endl;
+    cout << "Does number '1' exist in the list? " << (list.exists(1) ? "Yes" : "No") << endl;
     cout << "List size: " << list.size() << endl;
         list.removeFirst();
         cout << "We removed the first element." << endl;
         cout << "We print the list:" << endl;
         list.print();
-        cout << "Let's try removing element '2'." << endl;
-        list.remove(2);
+        cout << "We remove the first element which is less, equal, and greater comapared to '5'." << endl;
+        list.remove(5, List::DeleteFlag::LESS);
+        list.remove(5);
+        list.remove(5, List::DeleteFlag::GREATER);
+        list.print();
+        cout << "We remove all of the elements!" << endl;
         while(!list.empty()) {
             list.removeFirst();
         }
