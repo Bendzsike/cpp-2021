@@ -35,6 +35,8 @@ int main() {
         cerr << e.what() << endl;
     }
 
+    cout << endl << endl;
+
     try {
         Stack stack;
         cout << "We insert elements [0, 9] in the stack." << endl;

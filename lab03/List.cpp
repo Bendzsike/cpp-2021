@@ -53,7 +53,6 @@ void List::remove(int d, DeleteFlag df) {
         case DeleteFlag::LESS:
             if(node->value < d) {
                 removeFirst();
-                --nodeCounter;
                 return;
             }
             while(node != nullptr) {
@@ -68,7 +67,6 @@ void List::remove(int d, DeleteFlag df) {
         case DeleteFlag::EQUAL:
             if(node->value == d) {
                 removeFirst();
-                --nodeCounter;
                 return;
             }
             while(node != nullptr) {
@@ -83,7 +81,6 @@ void List::remove(int d, DeleteFlag df) {
         case DeleteFlag::GREATER:
             if(node->value > d) {
                 removeFirst();
-                --nodeCounter;
                 return;
             }
             while(node != nullptr) {
