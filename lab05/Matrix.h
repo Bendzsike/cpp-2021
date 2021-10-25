@@ -21,7 +21,7 @@ public:
     void printMatrix(ostream& os = cout) const;
     bool isSquare() const {return this->rows == this->columns;};
     int getRows() const {return this->rows;}
-    int getColumns() const {return this->columns;}
+    int getCols() const {return this->columns;}
     friend Matrix operator+(const Matrix& x, const Matrix& y);
     friend Matrix operator*(const Matrix& x, const Matrix& y);
     friend istream& operator>>(istream& is, Matrix& matrix);
