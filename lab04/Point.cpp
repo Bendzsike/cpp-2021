@@ -8,7 +8,17 @@ Point::Point(int x, int y) {
         this->x = 0;
         this->y = 0;
     }
+    ++counter;
 }
+
+Point::Point(const Point& p) {
+    this->x = p.getX();
+    this->y = p.getY();
+    ++counter;
+}
+
+int Point::counter{0};
+
 
 int Point::getX() const {
     return x;
@@ -20,4 +30,10 @@ int Point::getY() const {
 
 double Point::distanceTo(const Point& point) const {
     return sqrt(pow(point.getX() - this->getX(), 2) + pow(point.getY() - this->getY(), 2));
+}
+
+Point::~Point() {
+    x = 0;
+    y = 0;
+    --counter;
 }
