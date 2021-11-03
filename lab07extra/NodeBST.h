@@ -1,6 +1,7 @@
 #ifndef LAB7_NODEBST_H
 #define LAB7_NODEBST_H
 
+#include <iostream>
 #include "BST.h"
 
 class NodeBST : public BST {
