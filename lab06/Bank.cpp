@@ -28,8 +28,8 @@ Customer& Bank::getCustomer(int id) {
             return *it;
         }
     }
-    ///Idk what to do here, so I return the last element
-    return *(customers.end() - 1);
+    string str = to_string(id);
+    throw invalid_argument("Customer corresponding to ID \"" + str + "\" is not in the system!");
 }
 
 //Convenience functions
@@ -51,7 +51,7 @@ vector<int> Bank::loadCustomers(const string& filename) {
     ifstream in(filename);
     if(!in.is_open()) {
         cout << "Unable to open file!" << endl;
-        return IDs;
+        exit(1);
     }
     string firstName, lastName;
     while(in >> firstName >> lastName) {

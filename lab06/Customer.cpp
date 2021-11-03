@@ -30,8 +30,8 @@ Account& Customer::getAccount(int id) {
             return *it;
         }
     }
-    ///No Idea what should I do here.
-    return *(accounts.end() - 1);
+    string str = to_string(id);
+    throw invalid_argument("Account corresponding to ID \"" + str + "\" is not in the system!");
 }
 
 int Customer::newAccount(double balance) {

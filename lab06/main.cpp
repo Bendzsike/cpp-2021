@@ -67,23 +67,28 @@ int main() {
     bank.printCustomers();
 
     int index = 1;
-    for(auto it = IDs.begin(); it != IDs.end(); ++it, ++index) {
-        bank.getCustomer(*it).newAccount(index * 1000);
-        bank.getCustomer(*it).newAccount(index * 2000);
-    }
-    cout << endl << "Printing the customers with their accounts:" << endl;
-    bank.printCustomersAndAccounts();
+    try {
+        for (auto it = IDs.begin(); it != IDs.end(); ++it, ++index) {
+            bank.getCustomer(*it).newAccount(index * 1000);
+            bank.getCustomer(*it).newAccount(index * 2000);
+        }
+        cout << endl << "Printing the customers with their accounts:" << endl;
+        bank.printCustomersAndAccounts();
 
-    cout << endl << "Depositing and withdrawing from the customers' accounts:" << endl;
-    for(auto it = IDs.begin(); it != IDs.end(); ++it, ++index) {
-        cout << "Name: " << bank.getCustomer(*it).getFirstName() << " " << bank.getCustomer(*it).getLastName() << endl;
-        cout << "Deposit " << index * 100 << " to account " << bank.getCustomer(*it).getAccount((*it) * 2);
-        bank.getCustomer(*it).getAccount((*it) * 2).deposit(index * 100);
-        cout << "After deposit: " << bank.getCustomer(*it).getAccount((*it) * 2);
-        cout << "Withdraw " << index * 200 << " from acocunt " << bank.getCustomer(*it).getAccount((*it) * 2 + 1);
-        bank.getCustomer(*it).getAccount((*it) * 2 + 1).withdraw(index * 200);
-        cout << "After withdraw: " << bank.getCustomer(*it).getAccount((*it) * 2 + 1);
-        cout << endl;
+        cout << endl << "Depositing and withdrawing from the customers' accounts:" << endl;
+        for (auto it = IDs.begin(); it != IDs.end(); ++it, ++index) {
+            cout << "Name: " << bank.getCustomer(*it).getFirstName() << " " << bank.getCustomer(*it).getLastName()
+                 << endl;
+            cout << "Deposit " << index * 100 << " to account " << bank.getCustomer(*it).getAccount((*it) * 2);
+            bank.getCustomer(*it).getAccount((*it) * 2).deposit(index * 100);
+            cout << "After deposit: " << bank.getCustomer(*it).getAccount((*it) * 2);
+            cout << "Withdraw " << index * 200 << " from acocunt " << bank.getCustomer(*it).getAccount((*it) * 2 + 1);
+            bank.getCustomer(*it).getAccount((*it) * 2 + 1).withdraw(index * 200);
+            cout << "After withdraw: " << bank.getCustomer(*it).getAccount((*it) * 2 + 1);
+            cout << endl;
+        }
+    } catch(invalid_argument &e) {
+        cerr << e.what() << endl;
     }
 
     cout << "Printing the customers with their accounts:" << endl;
