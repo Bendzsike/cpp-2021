@@ -14,12 +14,6 @@ protected:
 public:
     Szemely(string, string, int);
 
-    const string &getVezetekNev() const;
-
-    const string &getKeresztNev() const;
-
-    int getSzuletesiEv() const;
-
     virtual void print(ostream &o = cout) const;
 };
 
