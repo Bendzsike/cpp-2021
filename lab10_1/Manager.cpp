@@ -31,5 +31,6 @@ void Manager::print(ostream &o) const {
         beosztottak[i]->print(o);
         o << endl;
     }
+    o << "---------------------------------------------" << endl;
 }
 

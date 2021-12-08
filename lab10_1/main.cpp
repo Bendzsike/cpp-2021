@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Manager.h"
+#include "Ceg.h"
 
 using namespace std;
 
