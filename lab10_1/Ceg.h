@@ -4,10 +4,14 @@
 #include "Manager.h"
 
 class Ceg {
-public:
     vector<Alkalmazott *> alkalmazottak;
 public:
-
+    void hireAlkalmazott(Alkalmazott *al);
+    void fireAlkalmazott(int id);
+    void addAlkalmazottToManager(int managerID, int alkalmazottID);
+    void removeAlkalmazottFromManager(int managerID, int alkalmazottID);
+    void printAll(ostream &o = cout);
+    void printManager(ostream &o = cout);
 };
 
 

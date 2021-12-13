@@ -9,7 +9,6 @@ void Manager::addAlkalmazott(Alkalmazott *al) {
 }
 
 void Manager::deleteAlkalmazott(int id) {
-    int index = 0;
     for(int i = 0; i < beosztottakSzama(); ++i) {
         if (beosztottak[i]->getId() == id ) {
             beosztottak.erase(beosztottak.begin() + i);
