@@ -12,7 +12,7 @@ class Index {
     map<string, set<int>> index;
 public:
     Index(const string& fileName);
-    void print();
+    void print(ostream &o = cout);
 };
 
 
